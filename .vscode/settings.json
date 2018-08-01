@@ -1,0 +1,6 @@
+// canfeit will keep this file up to date, please back up your changes
+{
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on"
+}

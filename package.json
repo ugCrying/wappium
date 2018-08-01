@@ -1,0 +1,13 @@
+{
+  "name": "wappium",
+  "description": "Automation for Apps.",
+  "version": "1.8.0",
+  "main": "./index.js",
+  "license": "MIT",
+  "dependencies": {
+    "appium": "^1.8.1"
+  },
+  "scripts": {
+    "start": "node index"
+  }
+}
