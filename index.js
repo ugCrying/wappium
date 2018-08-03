@@ -1,4 +1,5 @@
 const { AppiumDriver } = require("appium/build/lib/appium");
+const UiAutomator2Server = require("appium-uiautomator2-driver/build/lib/uiautomator2.js");
 const AndroidDriver = require("appium-android-driver/build/lib/driver");
 const {
   METHOD_MAP,
@@ -11,11 +12,13 @@ const methods = require("appium-adb/build/lib/tools/adb-commands");
 const apkUtilsMethods = require("appium-adb/build/lib/tools/apk-utils");
 const testwa = require("./lib/testwa");
 const executeCommand = AppiumDriver.prototype.executeCommand;
+const installServerApk = UiAutomator2Server.prototype.installServerApk;
 const { startAndroidSession, deleteSession } = AndroidDriver.prototype;
 const { installFromDevicePath, install } = apkUtilsMethods;
 // const utf7 = require('emailjs-utf7');
 const { main } = require("appium");
 const { sleep, retry, asyncify } = require("asyncbox");
+
 let wd = {};
 const inputKeyboardValue = async function(keys) {
   let text = keys;
@@ -27,27 +30,38 @@ const inputKeyboardValue = async function(keys) {
 
   await this.adb.inputTextM(text);
 };
-METHOD_MAP["/wd/hub/session/:sessionId/element"] = {
-  POST: {
-    command: "findElement",
-    payloadParams: { required: ["using", "value"], optional: ["mode", "note"] }
-  }
-};
-METHOD_MAP["/wd/hub/session/:sessionId/elements"] = {
-  POST: {
-    command: "findElements",
-    payloadParams: { required: ["using", "value"], optional: ["mode"] }
-  }
-};
-METHOD_MAP["/wd/hub/session/:sessionId/value"] = {
-  POST: { command: "  ", payloadParams: { required: ["value"] } }
-};
+// METHOD_MAP["/wd/hub/session/:sessionId/element"] = {
+//   POST: {
+//     command: "findElement",
+//     payloadParams: { required: ["using", "value"], optional: ["mode", "note"] }
+//   }
+// };
+// METHOD_MAP["/wd/hub/session/:sessionId/elements"] = {
+//   POST: {
+//     command: "findElements",
+//     payloadParams: { required: ["using", "value"], optional: ["mode"] }
+//   }
+// };
+// METHOD_MAP["/wd/hub/session/:sessionId/value"] = {
+//   POST: { command: "  ", payloadParams: { required: ["value"] } }
+// };
 ALL_COMMANDS.push("inputValue");
 commands.inputValue = async function(keys) {
   return await inputKeyboardValue(keys);
 };
 const argv = require("yargs").argv;
 process.argv.splice(2);
+UiAutomator2Server.prototype.installServerApk = async function(installTimeout) {
+  // if (argv.ignoreUiAutomator2) {
+  const isInstall = await this.adb.shell([
+    "pm",
+    "path",
+    "io.appium.uiautomator2.server"
+  ]);
+  if (isInstall) return;
+  // }
+  await installServerApk.bind(this)(installTimeout);
+};
 AppiumDriver.prototype.executeCommand = async function(cmd, ...args) {
   this.args.portal = argv.portal || process.env.TESTWA_PORTAL_URL;
   // || "http://localhost:8008/agent/client";

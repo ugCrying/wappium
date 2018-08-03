@@ -11,7 +11,7 @@ driver
     platformName: "Android",
     deviceName: "Android Emulator",
     executionTaskId: "11111",
-    // automationName: "UiAutomator2",
+    automationName: "UiAutomator2",
     // portal: true,
     app: __dirname + "/ApiDemos-debug.apk" // will be set later
   })
