@@ -69,7 +69,7 @@ ansi-wrap@0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/ansi-wrap/-/ansi-wrap-0.1.0.tgz#a82250ddb0015e9a27ca82e82ea603bbfa45efaf"
 
-appium-adb@^6.0.1, appium-adb@^6.2.1, appium-adb@^6.2.2, appium-adb@^6.5.2, appium-adb@^6.8.0:
+appium-adb@^6.0.1, appium-adb@^6.15.0, appium-adb@^6.2.1, appium-adb@^6.2.2, appium-adb@^6.5.2, appium-adb@^6.8.0:
   version "6.15.0"
   resolved "https://registry.yarnpkg.com/appium-adb/-/appium-adb-6.15.0.tgz#ab5f74e6ac4283a19c3e2af5d2e59447b6fcd110"
   dependencies:
@@ -126,10 +126,10 @@ appium-android-driver@2.x:
     yargs "^11.0.0"
 
 appium-android-driver@^3.0.0, appium-android-driver@^3.2.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/appium-android-driver/-/appium-android-driver-3.3.0.tgz#9e279838ded41df141a647456062766cb7fd2e40"
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/appium-android-driver/-/appium-android-driver-3.4.0.tgz#1420a4cfa7cd2bc25d3321f89976dcf9e4c18814"
   dependencies:
-    appium-adb "^6.8.0"
+    appium-adb "^6.15.0"
     appium-android-bootstrap "^2.11.0"
     appium-android-ime "^2.0.0"
     appium-base-driver "^3.0.0"
@@ -149,7 +149,7 @@ appium-android-driver@^3.0.0, appium-android-driver@^3.2.0:
     source-map-support "^0.5.5"
     teen_process "^1.9.0"
     temp "^0.8.3"
-    ws "^5.0.0"
+    ws "^6.0.0"
     yargs "^12.0.1"
 
 appium-android-ime@^2.0.0:
@@ -327,8 +327,8 @@ appium-mac-driver@1.x:
     yargs "^11.0.0"
 
 appium-remote-debugger@^3.10.0, appium-remote-debugger@^3.8.0:
-  version "3.19.1"
-  resolved "https://registry.yarnpkg.com/appium-remote-debugger/-/appium-remote-debugger-3.19.1.tgz#63ad8a1025927d2f295a963e6ae97f2d0cf42550"
+  version "3.19.2"
+  resolved "https://registry.yarnpkg.com/appium-remote-debugger/-/appium-remote-debugger-3.19.2.tgz#acbfd97eb36a8a800cad05ffb394a7231a6919a2"
   dependencies:
     appium-base-driver "^3.0.0"
     appium-support "^2.4.0"
@@ -346,8 +346,8 @@ appium-remote-debugger@^3.10.0, appium-remote-debugger@^3.8.0:
     ws "^6.0.0"
 
 appium-selendroid-driver@1.x:
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/appium-selendroid-driver/-/appium-selendroid-driver-1.10.0.tgz#0ecaf5326ae6aa91202fe79f13d8d5e82f3df51a"
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/appium-selendroid-driver/-/appium-selendroid-driver-1.11.0.tgz#b97a12e9a19af5de46991cada07962110d1f8260"
   dependencies:
     appium-adb "^6.2.1"
     appium-android-driver "^3.0.0"
@@ -355,6 +355,7 @@ appium-selendroid-driver@1.x:
     appium-support "^2.5.0"
     asyncbox "^2.3.1"
     babel-runtime "=5.8.24"
+    fancy-log "^1.3.2"
     lodash "^4.17.4"
     request-promise "^4.1.1"
     source-map-support "^0.5.5"
@@ -691,8 +692,8 @@ bcrypt-pbkdf@^1.0.0:
     tweetnacl "^0.14.3"
 
 big-integer@^1.6.7:
-  version "1.6.33"
-  resolved "https://registry.yarnpkg.com/big-integer/-/big-integer-1.6.33.tgz#6295b55e6010d2b2b4d234d32be93bfebddbba67"
+  version "1.6.34"
+  resolved "https://registry.yarnpkg.com/big-integer/-/big-integer-1.6.34.tgz#701affc8f0d73c490930a6b482dc23ed6ffc7484"
 
 bignumber.js@^2.1.0:
   version "2.4.0"
@@ -2709,8 +2710,8 @@ tar-stream@^1.5.0:
     xtend "^4.0.0"
 
 tar@^4:
-  version "4.4.4"
-  resolved "https://registry.yarnpkg.com/tar/-/tar-4.4.4.tgz#ec8409fae9f665a4355cc3b4087d0820232bb8cd"
+  version "4.4.6"
+  resolved "https://registry.yarnpkg.com/tar/-/tar-4.4.6.tgz#63110f09c00b4e60ac8bcfe1bf3c8660235fbc9b"
   dependencies:
     chownr "^1.0.1"
     fs-minipass "^1.2.5"
@@ -2998,7 +2999,7 @@ yallist@^3.0.0, yallist@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-3.0.2.tgz#8452b4bb7e83c7c188d8041c1a837c773d6d8bb9"
 
-yargs-parser@^10.1.0:
+yargs-parser@^10.0.0, yargs-parser@^10.1.0:
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-10.1.0.tgz#7202265b89f7e9e9f2e5765e0fe735a905edbaa8"
   dependencies:
@@ -3026,6 +3027,23 @@ yargs@^11.0.0:
     which-module "^2.0.0"
     y18n "^3.2.1"
     yargs-parser "^9.0.2"
+
+yargs@^12.0.0:
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-12.0.0.tgz#8274480fd7332c77888bc33b6594340d31ed40d3"
+  dependencies:
+    cliui "^4.0.0"
+    decamelize "^1.1.1"
+    find-up "^2.1.0"
+    get-caller-file "^1.0.1"
+    os-locale "^2.0.0"
+    require-directory "^2.1.1"
+    require-main-filename "^1.0.1"
+    set-blocking "^2.0.0"
+    string-width "^2.0.0"
+    which-module "^2.0.0"
+    y18n "^3.2.1 || ^4.0.0"
+    yargs-parser "^10.0.0"
 
 yargs@^12.0.1:
   version "12.0.1"

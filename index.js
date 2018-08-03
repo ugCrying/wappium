@@ -46,7 +46,16 @@ ALL_COMMANDS.push("inputValue");
 commands.inputValue = async function(keys) {
   return await inputKeyboardValue(keys);
 };
+const argv = require("yargs").argv;
+process.argv.splice(2);
 AppiumDriver.prototype.executeCommand = async function(cmd, ...args) {
+  this.args.portal = argv.portal || process.env.TESTWA_PORTAL_URL;
+  // || "http://localhost:8008/agent/client";
+  this.args.screenshotPath =
+    argv.screenpath ||
+    argv.screenshotPath ||
+    process.env.TESTWA_SCREENSHOT_PATH ||
+    require("os").tmpdir();
   wd = this;
   const _startTime = new Date();
   testwa.beforeExecuteCommand(this, cmd, args);
