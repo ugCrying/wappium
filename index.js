@@ -49,8 +49,6 @@ ALL_COMMANDS.push("inputValue");
 commands.inputValue = async function(keys) {
   return await inputKeyboardValue(keys);
 };
-const argv = require("yargs").argv;
-process.argv.splice(2);
 UiAutomator2Server.prototype.installServerApk = async function(installTimeout) {
   // if (argv.ignoreUiAutomator2) {
   const isInstall = await this.adb.shell([
@@ -169,7 +167,10 @@ apkUtilsMethods.forceInstall = async function() {
   retry(8, func);
 };
 
+const argv = require("yargs").argv;
+// process.argv.splice(2);
 if (require.main === module) {
-  asyncify(main);
+  // asyncify(main);
+  main(argv);
 }
 exports.main = main;
