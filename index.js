@@ -1,6 +1,7 @@
 const { AppiumDriver } = require("appium/build/lib/appium");
 const UiAutomator2Server = require("appium-uiautomator2-driver/build/lib/uiautomator2.js");
 const AndroidDriver = require("appium-android-driver/build/lib/driver");
+const android_helpers = require("appium-android-driver/build/lib/android-helpers");
 const {
   METHOD_MAP,
   ALL_COMMANDS
@@ -18,7 +19,10 @@ const { installFromDevicePath, install } = apkUtilsMethods;
 // const utf7 = require('emailjs-utf7');
 const { main } = require("appium");
 const { sleep, retry, asyncify } = require("asyncbox");
-
+const pushSettingsApp = android_helpers.pushSettingsApp;
+android_helpers.pushSettingsApp = async function(adb, throwError) {
+  if (!argv.unlockType) await pushSettingsApp(adb, throwError);
+};
 let wd = {};
 const inputKeyboardValue = async function(keys) {
   let text = keys;
