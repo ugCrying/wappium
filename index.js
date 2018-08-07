@@ -1,58 +1,16 @@
-const { AppiumDriver } = require("appium/build/lib/appium");
-const UiAutomator2Server = require("appium-uiautomator2-driver/build/lib/uiautomator2.js");
-const AndroidDriver = require("appium-android-driver/build/lib/driver");
-const android_helpers = require("appium-android-driver/build/lib/android-helpers");
-const {
-  METHOD_MAP,
-  ALL_COMMANDS
-} = require("appium-base-driver/build/lib/protocol/routes");
-const {
-  commands
-} = require("appium-android-driver/build/lib/commands/element");
-const methods = require("appium-adb/build/lib/tools/adb-commands");
 const apkUtilsMethods = require("appium-adb/build/lib/tools/apk-utils");
-const testwa = require("./lib/testwa");
-const executeCommand = AppiumDriver.prototype.executeCommand;
-const installServerApk = UiAutomator2Server.prototype.installServerApk;
-const { startAndroidSession, deleteSession } = AndroidDriver.prototype;
-const { installFromDevicePath, install } = apkUtilsMethods;
-// const utf7 = require('emailjs-utf7');
-const { main } = require("appium");
-const { sleep, retry, asyncify } = require("asyncbox");
-const pushSettingsApp = android_helpers.pushSettingsApp;
-android_helpers.pushSettingsApp = async function(adb, throwError) {
-  if (!argv.unlockType) await pushSettingsApp(adb, throwError);
-};
-let wd = {};
-const inputKeyboardValue = async function(keys) {
-  let text = keys;
-  if (keys instanceof Array) {
-    text = keys.join("");
+const { install } = apkUtilsMethods;
+apkUtilsMethods.install = async function(apk, options) {
+  if (!argv.unlockType) {
+    await install.bind(this)(apk, options);
   }
-
-  // text = utf7.imap.encode(text);
-
-  await this.adb.inputTextM(text);
 };
-// METHOD_MAP["/wd/hub/session/:sessionId/element"] = {
-//   POST: {
-//     command: "findElement",
-//     payloadParams: { required: ["using", "value"], optional: ["mode", "note"] }
-//   }
-// };
-// METHOD_MAP["/wd/hub/session/:sessionId/elements"] = {
-//   POST: {
-//     command: "findElements",
-//     payloadParams: { required: ["using", "value"], optional: ["mode"] }
-//   }
-// };
-// METHOD_MAP["/wd/hub/session/:sessionId/value"] = {
-//   POST: { command: "  ", payloadParams: { required: ["value"] } }
-// };
-ALL_COMMANDS.push("inputValue");
-commands.inputValue = async function(keys) {
-  return await inputKeyboardValue(keys);
-};
+const UiAutomator2Server = require("appium-uiautomator2-driver/build/lib/uiautomator2.js");
+const android_helpers = require("appium-android-driver/build/lib/android-helpers");
+const { main } = require("appium");
+const installServerApk = UiAutomator2Server.prototype.installServerApk;
+const argv = require("yargs").argv;
+
 UiAutomator2Server.prototype.installServerApk = async function(installTimeout) {
   // if (argv.ignoreUiAutomator2) {
   const isInstall = await this.adb.shell([
@@ -64,117 +22,8 @@ UiAutomator2Server.prototype.installServerApk = async function(installTimeout) {
   // }
   await installServerApk.bind(this)(installTimeout);
 };
-AppiumDriver.prototype.executeCommand = async function(cmd, ...args) {
-  this.args.portal = argv.portal || process.env.TESTWA_PORTAL_URL;
-  // || "http://localhost:8008/agent/client";
-  this.args.screenshotPath =
-    argv.screenpath ||
-    argv.screenshotPath ||
-    process.env.TESTWA_SCREENSHOT_PATH ||
-    require("os").tmpdir();
-  wd = this;
-  const _startTime = new Date();
-  testwa.beforeExecuteCommand(this, cmd, args);
-  driverRes = await executeCommand.bind(this)(cmd, ...args);
-  if (cmd === "createSession") {
-    let arg = this ? this.args : args;
-    if (arg.report) {
-      testwa.initBaseDriver(this);
-    }
-  }
-  let arg = this ? this.args : args;
-  if (arg.genTool || arg.portal) {
-    await testwa.handler(
-      this,
-      { _startTime },
-      driverRes.status,
-      { status: driverRes.status, value: driverRes },
-      cmd,
-      args
-    );
-  }
-  return driverRes;
-};
-AndroidDriver.prototype.startAndroidSession = async function() {
-  await startAndroidSession.bind(this)();
-  let deviceLogPath = this.caps.deviceLogPath || this.opts.deviceLogPath;
-  if (deviceLogPath) {
-    log.debug("Testwa device log initiating!");
-    this.logcatProcess = testwa.startLogcat(
-      this.adb,
-      deviceLogPath,
-      this.sessionId
-    );
-  }
-};
-AndroidDriver.prototype.deleteSession = async function() {
-  //clean up testwa injections
-  if (this.opts.deviceLogPath) {
-    log.debug("Stopping testwa device log stream");
-    this.logcatProcess.kill();
-  }
-  await deleteSession.bind(this)();
-};
-methods.inputTextM = async function(text) {
-  /* jshint ignore:start */
-  // need to escape whitespace and ( ) < > | ; & * \ ~ " '
-  text = text
-    .replace(/\\/g, "\\\\")
-    .replace(/\(/g, "\\(")
-    .replace(/\)/g, "\\)")
-    .replace(/\</g, "\\<")
-    .replace(/\>/g, "\\>")
-    .replace(/\|/g, "\\|")
-    .replace(/\;/g, "\\;")
-    .replace(/\&/g, "\\&")
-    .replace(/\-/g, "\\-")
-    .replace(/\*/g, "\\*")
-    .replace(/\~/g, "\\~")
-    .replace(/\"/g, '\\"')
-    .replace(/\'/g, "\\'")
-    .replace(/ /g, "\\ ");
-  /* jshint ignore:end */
-  await this.shell(["input", "text", text]);
-};
-apkUtilsMethods.installFromDevicePath = async function(
-  apkPathOnDevice,
-  opts = {}
-) {
-  await Promise.all([
-    installFromDevicePath.bind(this)(apkPathOnDevice, opts),
-    this.forceInstall()
-  ]);
-};
-apkUtilsMethods.install = async function(apk, replace = true, timeout = 60000) {
-  await Promise.all([
-    install.bind(this)(apk, replace, timeout),
-    this.forceInstall()
-  ]);
-};
 
-apkUtilsMethods.forceInstall = async function() {
-  let func = async function() {
-    await sleep(2000);
-    let element = await wd.findElOrEls(
-      "xpath",
-      '//*[@content-desc="Install"]|//*[@text="Install"]',
-      false
-    );
-    element = await wd.findElOrEls(
-      "xpath",
-      '//*[@content-desc="CONFIRM"]|//*[@text="CONFIRM"]',
-      false
-    );
-    await wd.click(element.ELEMENT);
-  };
-
-  retry(8, func);
-};
-
-const argv = require("yargs").argv;
-// process.argv.splice(2);
 if (require.main === module) {
-  // asyncify(main);
   main(argv);
 }
 exports.main = main;

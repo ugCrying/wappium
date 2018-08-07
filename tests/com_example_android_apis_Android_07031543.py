@@ -12,8 +12,9 @@ import os
 import json
 import unicodedata
 import unittest
-PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__),p))
-
+PATH = lambda p: os.path.abspath(	
+    os.path.join(os.path.dirname(__file__), p)	
+)	
 class TestwaTests(unittest.TestCase):
 	def setUp(self):
 		desired_caps = {}
@@ -23,9 +24,9 @@ class TestwaTests(unittest.TestCase):
 		desired_caps['platformName'] = 'Android'
 		desired_caps['automationName'] = 'UiAutomator2'
 		desired_caps['deviceName'] = 'S9BDU17406036655'
-		desired_caps['app'] = './tests/ApiDemos-debug.apk'
-		desired_caps['appPackage'] = 'com.example.android.apis'
-		desired_caps['appActivity'] = 'com.example.android.apis.ApiDemos'
+		desired_caps['app'] = PATH('./ApiDemos-debug.apk')
+		desired_caps['appPackage'] = 'io.appium.android.apis'
+		desired_caps['appActivity'] = 'io.appium.android.apis.ApiDemos'
 
 		global wd,screenRatioX,screenRatioY,action
 		self.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
