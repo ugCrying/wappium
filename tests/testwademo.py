@@ -27,6 +27,7 @@ class TestwaTests(unittest.TestCase):
         #desired_caps['appWaitActivity'] = '.MainActivity'
         desired_caps['newCommandTimeout'] = 3600
         desired_caps['noReset'] = True
+        # desired_caps['screenshotPath']='./tmp'
 
         global wd,screenRatioX,screenRatioY,touchAction
         self.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
