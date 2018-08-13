@@ -24,6 +24,8 @@ UiAutomator2Server.prototype.installServerApk = async function(installTimeout) {
 };
 
 if (require.main === module) {
-  main(argv);
+  main(argv).catch(e => {
+    console.error(e.message, "appium 启动失败");
+  });
 }
 exports.main = main;

@@ -16,4 +16,6 @@ main(
     }
   },
   true
-);
+).catch(e => {
+  console.error(e.message, "appium 启动失败");
+});
