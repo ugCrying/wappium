@@ -1,7 +1,9 @@
+process.env.http_proxy = "";
+process.env.https_proxy = "";
 const apkUtilsMethods = require("appium-adb/build/lib/tools/apk-utils");
 const { install } = apkUtilsMethods;
 apkUtilsMethods.install = async function(apk, options) {
-  if (!argv.unlockType) {
+  if (!argv.unlockType && !process.env.unlockType) {
     await install.bind(this)(apk, options);
   }
 };

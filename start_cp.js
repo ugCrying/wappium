@@ -1,4 +1,5 @@
 const { main } = require(".");
+process.env.unlockType = true;
 main(
   {
     // port: 4723, // 监听的端口	--port 4723
@@ -18,4 +19,11 @@ main(
   true
 ).catch(e => {
   console.error(e.message, "appium 启动失败");
+});
+process.on("message", ({ type }) => {
+  switch (type) {
+    case "exit":
+      process.exit(1);
+      break;
+  }
 });
