@@ -507,7 +507,7 @@ appium-youiengine-driver@^1.0.17:
 
 appium@^1.8.1:
   version "1.8.1"
-  resolved "http://registry.npm.taobao.org/appium/download/appium-1.8.1.tgz#93e1f0bb35f0f20f0c1d98af405d6260f5f3dc95"
+  resolved "https://registry.yarnpkg.com/appium/-/appium-1.8.1.tgz#93e1f0bb35f0f20f0c1d98af405d6260f5f3dc95"
   dependencies:
     appium-android-driver "2.x"
     appium-base-driver "^2.20.2"

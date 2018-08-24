@@ -11,7 +11,8 @@ main(
     // localTimezone: false, // 使用本地时间戳
     // relaxedSecurityEnabled: false, // 安全检查
     // webhook: null, // 同时发送日志到 HTTP 监听器	--webhook localhost:9876
-    logHandler: (level, msg) => {
+    noPermsCheck: true,
+    logHandler: (_, msg) => {
       // 日志监听方法
       process.send(msg);
     }

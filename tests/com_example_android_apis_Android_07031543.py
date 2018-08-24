@@ -23,7 +23,7 @@ class TestwaTests(unittest.TestCase):
 		desired_caps['resetKeyboard'] = True
 		desired_caps['platformName'] = 'Android'
 		desired_caps['automationName'] = 'UiAutomator2'
-		desired_caps['deviceName'] = 'S9BDU17406036655'
+		desired_caps['deviceName'] = 'e301970f7d93'
 		desired_caps['app'] = PATH('./ApiDemos-debug.apk')
 		desired_caps['appPackage'] = 'io.appium.android.apis'
 		desired_caps['appActivity'] = 'io.appium.android.apis.ApiDemos'
