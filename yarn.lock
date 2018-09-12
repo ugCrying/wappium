@@ -74,8 +74,8 @@ ansi-wrap@0.1.0:
   resolved "https://registry.yarnpkg.com/ansi-wrap/-/ansi-wrap-0.1.0.tgz#a82250ddb0015e9a27ca82e82ea603bbfa45efaf"
 
 appium-adb@^6.15.0, appium-adb@^6.15.2, appium-adb@^6.2.1, appium-adb@^6.2.2, appium-adb@^6.5.2, appium-adb@^6.8.0:
-  version "6.18.0"
-  resolved "https://registry.yarnpkg.com/appium-adb/-/appium-adb-6.18.0.tgz#e412b543da005850145b739c12f99aa2639aad5a"
+  version "6.18.1"
+  resolved "https://registry.yarnpkg.com/appium-adb/-/appium-adb-6.18.1.tgz#8b7faa29cdd7071466b983369b482d5b6c24f21e"
   dependencies:
     appium-support "^2.4.0"
     asyncbox "^2.3.1"
@@ -200,8 +200,8 @@ appium-android-ime@^2.0.0:
   resolved "https://registry.yarnpkg.com/appium-android-ime/-/appium-android-ime-2.0.0.tgz#e4127fd4553e01819900769a8446b499e6328289"
 
 appium-base-driver@3.x, appium-base-driver@^3.0.0, appium-base-driver@^3.4.0, appium-base-driver@^3.5.0:
-  version "3.6.2"
-  resolved "https://registry.yarnpkg.com/appium-base-driver/-/appium-base-driver-3.6.2.tgz#39ceb69f82b4b4048246cb90c4ba6cfb70dde0e8"
+  version "3.6.3"
+  resolved "https://registry.yarnpkg.com/appium-base-driver/-/appium-base-driver-3.6.3.tgz#62bdcdc7b1248154877a1074730e7fa1c8d68d54"
   dependencies:
     appium-support "^2.19.0"
     asyncbox "^2.3.1"
@@ -1138,11 +1138,17 @@ debug@2.6.9, debug@^2.1.2, debug@^2.2.0, debug@~2.6.3:
   dependencies:
     ms "2.0.0"
 
-debug@3.1.0, debug@^3.1.0:
+debug@3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
   dependencies:
     ms "2.0.0"
+
+debug@^3.1.0:
+  version "3.2.5"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.5.tgz#c2418fbfd7a29f4d4f70ff4cea604d4b64c46407"
+  dependencies:
+    ms "^2.1.1"
 
 decamelize@^1.1.1:
   version "1.2.0"
@@ -1188,7 +1194,7 @@ dom-walk@^0.1.0:
 
 duplexer@~0.1.1:
   version "0.1.1"
-  resolved "https://registry.yarnpkg.com/duplexer/-/duplexer-0.1.1.tgz#ace6ff808c1ce66b57d1ebf97977acb02334cfc1"
+  resolved "http://registry.npmjs.org/duplexer/-/duplexer-0.1.1.tgz#ace6ff808c1ce66b57d1ebf97977acb02334cfc1"
 
 ecc-jsbn@~0.1.1:
   version "0.1.2"
@@ -1240,6 +1246,10 @@ es6-promise@^3.0.2:
 es6-promise@~3.0.2:
   version "3.0.2"
   resolved "http://registry.npmjs.org/es6-promise/-/es6-promise-3.0.2.tgz#010d5858423a5f118979665f46486a95c6ee2bb6"
+
+es6-promisify@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/es6-promisify/-/es6-promisify-6.0.0.tgz#b526a75eaa5ca600e960bf3d5ad98c40d75c7203"
 
 escape-html@~1.0.3:
   version "1.0.3"
@@ -1720,8 +1730,8 @@ invert-kv@^2.0.0:
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-2.0.0.tgz#7393f5afa59ec9ff5f67a27620d11c226e3eec02"
 
 io.appium.settings@^2.4.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/io.appium.settings/-/io.appium.settings-2.5.0.tgz#88835c41a91ee14995240b85760f8fa10e365a5a"
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/io.appium.settings/-/io.appium.settings-2.5.1.tgz#b16a4a443059fe4a7ded4d4c87414c01f86f98a2"
 
 ip-regex@^1.0.1:
   version "1.0.3"
@@ -2121,7 +2131,7 @@ ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
 
-ms@2.1.1:
+ms@2.1.1, ms@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
 
@@ -2460,12 +2470,12 @@ path@^0.12.7:
     util "^0.10.3"
 
 pem@^1.8.3:
-  version "1.12.6"
-  resolved "https://registry.yarnpkg.com/pem/-/pem-1.12.6.tgz#ca6058ca109b44262a506fca2654eeb8eabf1e52"
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/pem/-/pem-1.13.0.tgz#ac9f97dc0c1938fc8eebe3d1bc304a65de0eadc4"
   dependencies:
+    es6-promisify "^6.0.0"
     md5 "^2.2.1"
     os-tmpdir "^1.0.1"
-    safe-buffer "^5.1.2"
     which "^1.3.1"
 
 pend@~1.2.0:
@@ -2999,7 +3009,7 @@ split2@^2.1.0:
 
 split@~0.3.3:
   version "0.3.3"
-  resolved "https://registry.yarnpkg.com/split/-/split-0.3.3.tgz#cd0eea5e63a211dfff7eb0f091c4133e2d0dd28f"
+  resolved "http://registry.npmjs.org/split/-/split-0.3.3.tgz#cd0eea5e63a211dfff7eb0f091c4133e2d0dd28f"
   dependencies:
     through "2"
 
@@ -3044,7 +3054,7 @@ stream-buffers@~2.2.0:
 
 stream-combiner@^0.2.2:
   version "0.2.2"
-  resolved "https://registry.yarnpkg.com/stream-combiner/-/stream-combiner-0.2.2.tgz#aec8cbac177b56b6f4fa479ced8c1912cee52858"
+  resolved "http://registry.npmjs.org/stream-combiner/-/stream-combiner-0.2.2.tgz#aec8cbac177b56b6f4fa479ced8c1912cee52858"
   dependencies:
     duplexer "~0.1.1"
     through "~2.3.4"
@@ -3179,7 +3189,7 @@ through2@^2.0.2, through2@^2.0.3:
 
 through@2, through@^2.3.8, through@~2.3.4:
   version "2.3.8"
-  resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
+  resolved "http://registry.npmjs.org/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
 
 time-stamp@^1.0.0:
   version "1.1.0"
