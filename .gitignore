@@ -61,3 +61,5 @@ typings/
 .next
 /tmp/
 tests/code.js
+tests/screen
+tests/source
