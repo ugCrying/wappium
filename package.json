@@ -3,6 +3,9 @@
   "description": "Automation for Apps.",
   "version": "1.8.0",
   "main": "./index.js",
+  "bin": {
+    "wappium": "./index.js"
+  },
   "license": "MIT",
   "dependencies": {
     "appium": "^1.9.1",
