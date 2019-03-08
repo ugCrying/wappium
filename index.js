@@ -4,7 +4,7 @@ console.log("##########################################");
 process.env.http_proxy = "";
 process.env.https_proxy = "";
 const argv = require("yargs").argv;
-const apkUtilsMethods = require("appium/node_modules/appium-adb/build/lib/tools/apk-utils");
+const apkUtilsMethods = require("appium-adb/build/lib/tools/apk-utils");
 const { install, startApp, installFromDevicePath } = apkUtilsMethods;
 
 const xpathLocators = {
@@ -96,16 +96,18 @@ apkUtilsMethods.installFromDevicePath = async function() {
   // forceInstall(androidDriver);
   return installed;
 };
-const UiAutomator2Server = require("appium/node_modules/appium-uiautomator2-driver/build/lib/uiautomator2.js");
+require("appium-android-driver/build/lib/android-helpers.js").default.pushSettingsApp = async function() {};
+const {
+  UiAutomator2Server
+} = require("appium-uiautomator2-driver/build/lib/uiautomator2.js");
 // .default;
 const {
   XCUITestDriver
-} = require("appium/node_modules/appium-xcuitest-driver/build/lib/driver.js");
+} = require("appium-xcuitest-driver/build/lib/driver.js");
 const { main } = require("appium");
 const installServerApk = UiAutomator2Server.prototype.installServerApk;
 const startWdaSession = XCUITestDriver.prototype.startWdaSession;
 const installApp = XCUITestDriver.prototype.installApp;
-
 XCUITestDriver.prototype.startWdaSession = async function() {
   const startTime = new Date().getTime();
   await startWdaSession.apply(this, arguments);
