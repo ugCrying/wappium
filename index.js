@@ -1,5 +1,11 @@
 console.log("##########################################");
-console.log("Testwa-Appium based on appium@1.9.1！\nStarting...");
+console.log(
+  `Testwa-Appium based on appium@${
+    require("appium/package.json").version
+  }！\nStarting...`
+);
+console.log("JAVA_HOME:", process.env.JAVA_HOME);
+console.log("ANDROID_HOME:", process.env.ANDROID_HOME);
 console.log("##########################################");
 process.env.http_proxy = "";
 process.env.https_proxy = "";
