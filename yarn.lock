@@ -3,19 +3,19 @@
 
 
 "@babel/polyfill@^7.0.0":
-  version "7.2.5"
-  resolved "http://registry.npm.taobao.org/@babel/polyfill/download/@babel/polyfill-7.2.5.tgz#6c54b964f71ad27edddc567d065e57e87ed7fa7d"
-  integrity sha1-bFS5ZPca0n7d3FZ9Bl5X6H7X+n0=
+  version "7.4.3"
+  resolved "http://registry.npm.taobao.org/@babel/polyfill/download/@babel/polyfill-7.4.3.tgz#332dc6f57b718017c3a8b37b4eea8aa6eeac1187"
+  integrity sha1-My3G9XtxgBfDqLN7TuqKpu6sEYc=
   dependencies:
-    core-js "^2.5.7"
-    regenerator-runtime "^0.12.0"
+    core-js "^2.6.5"
+    regenerator-runtime "^0.13.2"
 
-"@babel/runtime@^7.0.0":
-  version "7.3.4"
-  resolved "http://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.3.4.tgz#73d12ba819e365fcf7fd152aed56d6df97d21c83"
-  integrity sha1-c9ErqBnjZfz3/RUq7VbW35fSHIM=
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.4.0":
+  version "7.4.3"
+  resolved "http://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.4.3.tgz#79888e452034223ad9609187a0ad1fe0d2ad4bdc"
+  integrity sha1-eYiORSA0IjrZYJGHoK0f4NKtS9w=
   dependencies:
-    regenerator-runtime "^0.12.0"
+    regenerator-runtime "^0.13.2"
 
 "@jimp/bmp@^0.5.4":
   version "0.5.4"
@@ -195,10 +195,10 @@
     "@jimp/utils" "^0.5.0"
     core-js "^2.5.7"
 
-"@jimp/plugin-cover@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.taobao.org/@jimp/plugin-cover/download/@jimp/plugin-cover-0.6.0.tgz#8f61e5fbdab709099c5f39a9398f62447093a6e2"
-  integrity sha1-j2Hl+9q3CQmcXzmpOY9iRHCTpuI=
+"@jimp/plugin-cover@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.taobao.org/@jimp/plugin-cover/download/@jimp/plugin-cover-0.6.1.tgz#ac4e1d49e3d47e018b0a699156ca183b536befb9"
+  integrity sha1-rE4dSePUfgGLCmmRVsoYO1Nr77k=
   dependencies:
     "@jimp/utils" "^0.6.0"
     core-js "^2.5.7"
@@ -211,10 +211,10 @@
     "@jimp/utils" "^0.5.0"
     core-js "^2.5.7"
 
-"@jimp/plugin-crop@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.taobao.org/@jimp/plugin-crop/download/@jimp/plugin-crop-0.6.0.tgz#ef093b94327d3a2f642223a078861a96614367f5"
-  integrity sha1-7wk7lDJ9Oi9kIiOgeIYalmFDZ/U=
+"@jimp/plugin-crop@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.taobao.org/@jimp/plugin-crop/download/@jimp/plugin-crop-0.6.1.tgz#69c85db28fb7a168eca14c43ae7d5225ce0bddb1"
+  integrity sha1-achdso+3oWjsoUxDrn1SJc4L3bE=
   dependencies:
     "@jimp/utils" "^0.6.0"
     core-js "^2.5.7"
@@ -340,10 +340,10 @@
     core-js "^2.5.7"
     load-bmfont "^1.4.0"
 
-"@jimp/plugin-print@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.taobao.org/@jimp/plugin-print/download/@jimp/plugin-print-0.6.0.tgz#7e0ccdda9718ec2ceabd665eb593f185605d7d5f"
-  integrity sha1-fgzN2pcY7CzqvWZetZPxhWBdfV8=
+"@jimp/plugin-print@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.taobao.org/@jimp/plugin-print/download/@jimp/plugin-print-0.6.1.tgz#6465c8d387eadf41d457f9ee3898ca871138cff0"
+  integrity sha1-ZGXI04fq30HUV/nuOJjKhxE4z/A=
   dependencies:
     "@jimp/utils" "^0.6.0"
     core-js "^2.5.7"
@@ -373,10 +373,10 @@
     "@jimp/utils" "^0.5.0"
     core-js "^2.5.7"
 
-"@jimp/plugin-rotate@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.taobao.org/@jimp/plugin-rotate/download/@jimp/plugin-rotate-0.6.0.tgz#2d7a359b48cc830bf3eee94c9821c2bfd1b27daf"
-  integrity sha1-LXo1m0jMgwvz7ulMmCHCv9Gyfa8=
+"@jimp/plugin-rotate@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.taobao.org/@jimp/plugin-rotate/download/@jimp/plugin-rotate-0.6.1.tgz#1e9b3e58b51e0498bd94d52fff793ddd2a77c81f"
+  integrity sha1-Hps+WLUeBJi9lNUv/3k93Sp3yB8=
   dependencies:
     "@jimp/utils" "^0.6.0"
     core-js "^2.5.7"
@@ -422,17 +422,17 @@
     core-js "^2.5.7"
     timm "^1.6.1"
 
-"@jimp/plugins@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.taobao.org/@jimp/plugins/download/@jimp/plugins-0.6.0.tgz#407581a67891ec6399c1f3ffb95b0fc47c8c502b"
-  integrity sha1-QHWBpniR7GOZwfP/uVsPxHyMUCs=
+"@jimp/plugins@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.taobao.org/@jimp/plugins/download/@jimp/plugins-0.6.1.tgz#3e4898a2eab765b4f830be7081ab4c883d77c176"
+  integrity sha1-PkiYouq3ZbT4ML5wgatMiD13wXY=
   dependencies:
     "@jimp/plugin-blit" "^0.6.0"
     "@jimp/plugin-blur" "^0.6.0"
     "@jimp/plugin-color" "^0.6.0"
     "@jimp/plugin-contain" "^0.6.0"
-    "@jimp/plugin-cover" "^0.6.0"
-    "@jimp/plugin-crop" "^0.6.0"
+    "@jimp/plugin-cover" "^0.6.1"
+    "@jimp/plugin-crop" "^0.6.1"
     "@jimp/plugin-displace" "^0.6.0"
     "@jimp/plugin-dither" "^0.6.0"
     "@jimp/plugin-flip" "^0.6.0"
@@ -440,9 +440,9 @@
     "@jimp/plugin-invert" "^0.6.0"
     "@jimp/plugin-mask" "^0.6.0"
     "@jimp/plugin-normalize" "^0.6.0"
-    "@jimp/plugin-print" "^0.6.0"
+    "@jimp/plugin-print" "^0.6.1"
     "@jimp/plugin-resize" "^0.6.0"
-    "@jimp/plugin-rotate" "^0.6.0"
+    "@jimp/plugin-rotate" "^0.6.1"
     "@jimp/plugin-scale" "^0.6.0"
     core-js "^2.5.7"
     timm "^1.6.1"
@@ -589,10 +589,10 @@ ansi-regex@^3.0.0:
   resolved "http://registry.npm.taobao.org/ansi-regex/download/ansi-regex-3.0.0.tgz#ed0317c322064f79466c02966bddb605ab37d998"
   integrity sha1-7QMXwyIGT3lGbAKWa922Bas32Zg=
 
-ansi-regex@^4.0.0:
-  version "4.0.0"
-  resolved "http://registry.npm.taobao.org/ansi-regex/download/ansi-regex-4.0.0.tgz#70de791edf021404c3fd615aa89118ae0432e5a9"
-  integrity sha1-cN55Ht8CFATD/WFaqJEYrgQy5ak=
+ansi-regex@^4.1.0:
+  version "4.1.0"
+  resolved "http://registry.npm.taobao.org/ansi-regex/download/ansi-regex-4.1.0.tgz#8b9f8f08cf1acb843756a839ca8c7e3168c51997"
+  integrity sha1-i5+PCM8ay4Q3Vqg5yox+MWjFGZc=
 
 ansi-wrap@0.1.0:
   version "0.1.0"
@@ -604,10 +604,10 @@ any-base@^1.1.0:
   resolved "http://registry.npm.taobao.org/any-base/download/any-base-1.1.0.tgz#ae101a62bc08a597b4c9ab5b7089d456630549fe"
   integrity sha1-rhAaYrwIpZe0yatbcInUVmMFSf4=
 
-appium-adb@^7.0.0:
-  version "7.3.0"
-  resolved "http://registry.npm.taobao.org/appium-adb/download/appium-adb-7.3.0.tgz#9a097589bed9dac946efeda804703778ae1e4567"
-  integrity sha1-mgl1ib7Z2slG7+2oBHA3eK4eRWc=
+appium-adb@^7.0.0, appium-adb@^7.4.0, appium-adb@^7.7.0:
+  version "7.7.1"
+  resolved "http://registry.npm.taobao.org/appium-adb/download/appium-adb-7.7.1.tgz#a808cbb5663598d50cf1b6fa18e1709cf361b57f"
+  integrity sha1-qAjLtWY1mNUM8bb6GOFwnPNhtX8=
   dependencies:
     "@babel/runtime" "^7.0.0"
     appium-support "^2.24.0"
@@ -616,27 +616,27 @@ appium-adb@^7.0.0:
     bluebird "^3.4.7"
     lodash "^4.0.0"
     lru-cache "^5.0.0"
-    semver "^5.5.0"
+    semver "^6.0.0"
     shell-quote "^1.6.1"
     source-map-support "^0.5.5"
     teen_process "^1.11.0"
     xmldom "^0.1.27"
     xpath "^0.0.27"
 
-appium-android-driver@^4.0.0, appium-android-driver@^4.8.0:
-  version "4.8.0"
-  resolved "http://registry.npm.taobao.org/appium-android-driver/download/appium-android-driver-4.8.0.tgz#1e807b325b4a053a4bb349c7dd456d95b2205be7"
-  integrity sha1-HoB7MltKBTpLs0nH3UVtlbIgW+c=
+appium-android-driver@^4.0.0, appium-android-driver@^4.10.0, appium-android-driver@^4.12.0:
+  version "4.15.1"
+  resolved "http://registry.npm.taobao.org/appium-android-driver/download/appium-android-driver-4.15.1.tgz#eb89664419dc472e9b39c4ecf478fa46e882ca43"
+  integrity sha1-64lmRBncRy6bOcTs9Hj6RuiCykM=
   dependencies:
     "@babel/runtime" "^7.0.0"
-    appium-adb "^7.0.0"
-    appium-base-driver "^3.0.0"
+    appium-adb "^7.7.0"
+    appium-base-driver "^3.15.5"
     appium-chromedriver "^4.8.0"
     appium-support "^2.25.0"
     asyncbox "^2.0.4"
     bluebird "^3.4.7"
     io.appium.settings "^2.10.0"
-    jimp "^0.5.3"
+    jimp "^0.6.0"
     lodash "^4.17.4"
     moment "^2.22.2"
     portfinder "^1.0.6"
@@ -644,20 +644,20 @@ appium-android-driver@^4.0.0, appium-android-driver@^4.8.0:
     shell-quote "^1.6.1"
     source-map-support "^0.5.5"
     teen_process "^1.9.0"
-    temp "^0.8.3"
+    temp "^0.9.0"
     ws "^6.0.0"
-    yargs "^12.0.1"
+    yargs "^13.1.0"
 
-appium-base-driver@^3.0.0, appium-base-driver@^3.10.0, appium-base-driver@^3.15.2, appium-base-driver@^3.5.0, appium-base-driver@^3.x:
-  version "3.15.3"
-  resolved "http://registry.npm.taobao.org/appium-base-driver/download/appium-base-driver-3.15.3.tgz#23a04f2d3cfd9eaf20968c89087dc2a7c110a73e"
-  integrity sha1-I6BPLTz9nq8gloyJCH3Cp8EQpz4=
+appium-base-driver@3.x, appium-base-driver@^3.0.0, appium-base-driver@^3.10.0, appium-base-driver@^3.15.5, appium-base-driver@^3.5.0, appium-base-driver@^3.x:
+  version "3.15.5"
+  resolved "http://registry.npm.taobao.org/appium-base-driver/download/appium-base-driver-3.15.5.tgz#9cf215a476f1538b5e36cb5f7ce7f2e72985332c"
+  integrity sha1-nPIVpHbxU4teNstffOfy5ymFMyw=
   dependencies:
     "@babel/runtime" "^7.0.0"
     appium-support "^2.24.0"
     async-lock "^1.0.0"
     asyncbox "^2.3.1"
-    bluebird "^2.10.2"
+    bluebird "^3.5.3"
     body-parser "^1.18.2"
     colors "^1.1.2"
     es6-error "^4.1.1"
@@ -696,14 +696,14 @@ appium-chromedriver@^4.8.0:
     source-map-support "^0.5.5"
     teen_process "^1.3.1"
 
-appium-espresso-driver@^1.7.1:
-  version "1.8.0"
-  resolved "http://registry.npm.taobao.org/appium-espresso-driver/download/appium-espresso-driver-1.8.0.tgz#4f440fdb1dda5ba61f67a4ac22119326a3017e53"
-  integrity sha1-T0QP2x3aW6YfZ6SsIhGTJqMBflM=
+appium-espresso-driver@^1.0.0:
+  version "1.10.1"
+  resolved "http://registry.npm.taobao.org/appium-espresso-driver/download/appium-espresso-driver-1.10.1.tgz#565154ee7647d103138613ffd5bea972333fab44"
+  integrity sha1-VlFU7nZH0QMThhP/1b6pcjM/q0Q=
   dependencies:
-    "@babel/runtime" "^7.0.0"
+    "@babel/runtime" "^7.4.0"
     appium-adb "^7.0.0"
-    appium-android-driver "^4.0.0"
+    appium-android-driver "^4.12.0"
     appium-base-driver "^3.5.0"
     appium-support "^2.20.0"
     asyncbox "^2.3.1"
@@ -716,7 +716,7 @@ appium-espresso-driver@^1.7.1:
     validate.js "^0.12.0"
     yargs "^13.1.0"
 
-appium-fake-driver@^0.6.2:
+appium-fake-driver@^0.x:
   version "0.6.2"
   resolved "http://registry.npm.taobao.org/appium-fake-driver/download/appium-fake-driver-0.6.2.tgz#e615b91428961717e477fa81b2b15897a6b5a3e6"
   integrity sha1-5hW5FCiWFxfkd/qBsrFYl6a1o+Y=
@@ -732,7 +732,7 @@ appium-fake-driver@^0.6.2:
     xpath "0.0.27"
     yargs "^12.0.1"
 
-appium-ios-driver@2.x, appium-ios-driver@^2.13.2:
+appium-ios-driver@2.x:
   version "2.13.2"
   resolved "http://registry.npm.taobao.org/appium-ios-driver/download/appium-ios-driver-2.13.2.tgz#d364c46db0e71294219906b09c0f3627f5566460"
   integrity sha1-02TEbbDnEpQhmQawnA82J/VWZGA=
@@ -764,15 +764,15 @@ appium-ios-driver@2.x, appium-ios-driver@^2.13.2:
     xpath "^0.0.24"
     yargs "^12.0.1"
 
-appium-ios-driver@^4.0.0:
-  version "4.1.0"
-  resolved "http://registry.npm.taobao.org/appium-ios-driver/download/appium-ios-driver-4.1.0.tgz#ba6f8fcc9b5501dd7d6fc98b040de86971462451"
-  integrity sha1-um+PzJtVAd19b8mLBA3oaXFGJFE=
+appium-ios-driver@^4.0.0, appium-ios-driver@^4.2.1:
+  version "4.2.2"
+  resolved "http://registry.npm.taobao.org/appium-ios-driver/download/appium-ios-driver-4.2.2.tgz#8932ea2761c0a2707f22e7c3522086decef89dfb"
+  integrity sha1-iTLqJ2HAonB/IufDUiCG3s74nfs=
   dependencies:
     "@babel/runtime" "^7.0.0"
     appium-base-driver "^3.0.0"
     appium-ios-simulator "^3.9.0"
-    appium-remote-debugger "^3.20.0"
+    appium-remote-debugger "^4.1.0"
     appium-support "^2.25.0"
     appium-xcode "^3.1.0"
     asyncbox "^2.3.1"
@@ -782,7 +782,7 @@ appium-ios-driver@^4.0.0:
     lodash "^4.13.1"
     moment "^2.22.2"
     node-idevice "^0.1.6"
-    node-simctl "^4.0.0"
+    node-simctl "^5.0.0"
     pem "^1.8.3"
     portfinder "^1.0.13"
     request "^2.79.0"
@@ -794,7 +794,7 @@ appium-ios-driver@^4.0.0:
     uuid-js "^0.7.5"
     xmldom "^0.1.22"
     xpath "^0.0.24"
-    yargs "^12.0.1"
+    yargs "^13.1.0"
 
 appium-ios-simulator@3.x, appium-ios-simulator@^3.0.0, appium-ios-simulator@^3.9.0:
   version "3.10.0"
@@ -816,7 +816,7 @@ appium-ios-simulator@3.x, appium-ios-simulator@^3.0.0, appium-ios-simulator@^3.9
     source-map-support "^0.5.3"
     teen_process "^1.3.0"
 
-appium-mac-driver@1.x, appium-mac-driver@^1.4.1:
+appium-mac-driver@1.x:
   version "1.4.1"
   resolved "http://registry.npm.taobao.org/appium-mac-driver/download/appium-mac-driver-1.4.1.tgz#c515dd64de5004e3e62003ba556811b45a706b14"
   integrity sha1-xRXdZN5QBOPmIAO6VWgRtFpwaxQ=
@@ -830,7 +830,7 @@ appium-mac-driver@1.x, appium-mac-driver@^1.4.1:
     teen_process "^1.7.0"
     yargs "^12.0.1"
 
-appium-remote-debugger@^3.16.0, appium-remote-debugger@^3.20.0:
+appium-remote-debugger@^3.20.0:
   version "3.22.3"
   resolved "http://registry.npm.taobao.org/appium-remote-debugger/download/appium-remote-debugger-3.22.3.tgz#6ae5fc5483aeae0d49dfe47984e2c0819c7ed630"
   integrity sha1-auX8VIOurg1J3+R5hOLAgZx+1jA=
@@ -850,6 +850,25 @@ appium-remote-debugger@^3.16.0, appium-remote-debugger@^3.20.0:
     uuid-js "^0.7.5"
     ws "^6.0.0"
 
+appium-remote-debugger@^4.0.0, appium-remote-debugger@^4.1.0:
+  version "4.2.1"
+  resolved "http://registry.npm.taobao.org/appium-remote-debugger/download/appium-remote-debugger-4.2.1.tgz#61b7e9b08c8e41430c76f1e12962c2e25b9a7fea"
+  integrity sha1-YbfpsIyOQUMMdvHhKWLC4luaf+o=
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    appium-base-driver "^3.0.0"
+    appium-support "^2.4.0"
+    bluebird "^3.4.7"
+    bplist-creator "0.0.7"
+    bplist-parser "^0.1.0"
+    bufferpack "0.0.6"
+    es6-error "^4.1.1"
+    lodash "^4.17.11"
+    request "^2.79.0"
+    request-promise "^4.1.1"
+    source-map-support "^0.5.5"
+    ws "^6.0.0"
+
 appium-sdb@^1.0.0-beta:
   version "1.0.0-beta"
   resolved "http://registry.npm.taobao.org/appium-sdb/download/appium-sdb-1.0.0-beta.tgz#c8194559b20b93b6a44c5b3c0a69499967f43fc2"
@@ -863,7 +882,7 @@ appium-sdb@^1.0.0-beta:
     source-map-support "^0.4.8"
     teen_process "^1.3.1"
 
-appium-selendroid-driver@^1.13.3:
+appium-selendroid-driver@1.x:
   version "1.13.3"
   resolved "http://registry.npm.taobao.org/appium-selendroid-driver/download/appium-selendroid-driver-1.13.3.tgz#0a20a7f2a154b24ef62c10e1ae44e0d30aa5e8c3"
   integrity sha1-CiCn8qFUsk72LBDhrkTg0wql6MM=
@@ -882,10 +901,10 @@ appium-selendroid-driver@^1.13.3:
     utf7 "^1.0.0"
     yargs "^12.0.1"
 
-appium-support@2.x, appium-support@^2.0.10, appium-support@^2.11.1, appium-support@^2.20.0, appium-support@^2.24.0, appium-support@^2.25.0, appium-support@^2.4.0, appium-support@^2.5.0, appium-support@^2.6.0, appium-support@^2.8.0:
-  version "2.25.0"
-  resolved "http://registry.npm.taobao.org/appium-support/download/appium-support-2.25.0.tgz#1679cb6d1ec0e5e5bea944c9b25270d462370a6c"
-  integrity sha1-FnnLbR7A5eW+qUTJslJw1GI3Cmw=
+appium-support@2.x, appium-support@^2.0.10, appium-support@^2.11.1, appium-support@^2.20.0, appium-support@^2.24.0, appium-support@^2.25.0, appium-support@^2.26.0, appium-support@^2.26.1, appium-support@^2.4.0, appium-support@^2.5.0, appium-support@^2.6.0, appium-support@^2.8.0:
+  version "2.26.1"
+  resolved "http://registry.npm.taobao.org/appium-support/download/appium-support-2.26.1.tgz#99583f4346739090de9a815cc48392a593e12430"
+  integrity sha1-mVg/Q0ZzkJDemoFcxIOSpZPhJDA=
   dependencies:
     "@babel/runtime" "^7.0.0"
     archiver "^1.3.0"
@@ -894,7 +913,7 @@ appium-support@2.x, appium-support@^2.0.10, appium-support@^2.11.1, appium-suppo
     bplist-parser "^0.1.0"
     extract-zip "^1.6.0"
     glob "^7.1.2"
-    jimp "^0.5.3"
+    jimp "^0.6.0"
     jsftp "^2.1.2"
     lodash "^4.2.1"
     md5-file "^4.0.0"
@@ -908,6 +927,7 @@ appium-support@2.x, appium-support@^2.0.10, appium-support@^2.11.1, appium-suppo
     request "^2.83.0"
     request-promise "^4.2.2"
     rimraf "^2.5.1"
+    semver "^5.6.0"
     source-map-support "^0.5.5"
     teen_process "^1.5.1"
     which "^1.2.4"
@@ -931,14 +951,14 @@ appium-tizen-driver@^1.1.1-beta.3:
     teen_process "^1.9.0"
     yargs "^12.0.2"
 
-appium-uiautomator2-driver@^1.29.1:
-  version "1.31.0"
-  resolved "http://registry.npm.taobao.org/appium-uiautomator2-driver/download/appium-uiautomator2-driver-1.31.0.tgz#29c9f527092c755b0c4ffccd742f379c30e15edb"
-  integrity sha1-Kcn1JwksdVsMT/zNdC83nDDhXts=
+appium-uiautomator2-driver@1.x:
+  version "1.33.1"
+  resolved "http://registry.npm.taobao.org/appium-uiautomator2-driver/download/appium-uiautomator2-driver-1.33.1.tgz#397d4c7daf23cdf2a5c0a2fb0f49c3451362628a"
+  integrity sha1-OX1Mfa8jzfKlwKL7D0nDRRNiYoo=
   dependencies:
     "@babel/runtime" "^7.0.0"
-    appium-adb "^7.0.0"
-    appium-android-driver "^4.0.0"
+    appium-adb "^7.4.0"
+    appium-android-driver "^4.10.0"
     appium-base-driver "^3.10.0"
     appium-support "^2.24.0"
     appium-uiautomator2-server "^3.4.0"
@@ -953,11 +973,11 @@ appium-uiautomator2-driver@^1.29.1:
     yargs "^13.1.0"
 
 appium-uiautomator2-server@^3.4.0:
-  version "3.4.0"
-  resolved "http://registry.npm.taobao.org/appium-uiautomator2-server/download/appium-uiautomator2-server-3.4.0.tgz#fa4c52e81bf574aefdfc3f04c252ec19d3997383"
-  integrity sha1-+kxS6Bv1dK79/D8EwlLsGdOZc4M=
+  version "3.5.0"
+  resolved "http://registry.npm.taobao.org/appium-uiautomator2-server/download/appium-uiautomator2-server-3.5.0.tgz#eadf636957eb1695f20fa919fa361564903498bc"
+  integrity sha1-6t9jaVfrFpXyD6kZ+jYVZJA0mLw=
 
-appium-windows-driver@^1.5.1:
+appium-windows-driver@1.x:
   version "1.5.1"
   resolved "http://registry.npm.taobao.org/appium-windows-driver/download/appium-windows-driver-1.5.1.tgz#9c76b62ffe5681b02e4dce555b0ba74ca8185d28"
   integrity sha1-nHa2L/5WgbAuTc5VWwunTKgYXSg=
@@ -987,24 +1007,25 @@ appium-xcode@^3.1.0, appium-xcode@^3.2.0:
     source-map-support "^0.5.5"
     teen_process "^1.3.0"
 
-appium-xcuitest-driver@2.x, appium-xcuitest-driver@^2.105.1:
-  version "2.109.0"
-  resolved "http://registry.npm.taobao.org/appium-xcuitest-driver/download/appium-xcuitest-driver-2.109.0.tgz#5bbdb9e70a8fefad2297dc1615c975bb99d308d2"
-  integrity sha1-W7255wqP760il9wWFcl1u5nTCNI=
+appium-xcuitest-driver@2.x, appium-xcuitest-driver@^2.110.1:
+  version "2.112.0"
+  resolved "http://registry.npm.taobao.org/appium-xcuitest-driver/download/appium-xcuitest-driver-2.112.0.tgz#f9993f1d0d0008a5f7c2c5a27366471afe41528a"
+  integrity sha1-+Zk/HQ0ACKX3wsWic2ZHGv5BUoo=
   dependencies:
     "@babel/runtime" "^7.0.0"
     appium-base-driver "^3.0.0"
     appium-ios-driver "^4.0.0"
     appium-ios-simulator "^3.9.0"
-    appium-remote-debugger "^3.16.0"
-    appium-support "^2.25.0"
+    appium-remote-debugger "^4.0.0"
+    appium-support "^2.26.1"
     appium-xcode "^3.2.0"
     async-lock "^1.0.0"
     asyncbox "^2.3.1"
     bluebird "^3.1.1"
     js2xmlparser2 "^0.2.0"
     lodash "^4.17.10"
-    node-simctl "^4.0.0"
+    node-simctl "^5.0.0"
+    portscanner "2.2.0"
     request "^2.79.0"
     request-promise "^4.1.1"
     source-map-support "^0.5.5"
@@ -1014,7 +1035,7 @@ appium-xcuitest-driver@2.x, appium-xcuitest-driver@^2.105.1:
     xmldom "^0.1.27"
     yargs "^13.1.0"
 
-appium-youiengine-driver@^1.1.2:
+appium-youiengine-driver@^1.1.1:
   version "1.1.2"
   resolved "http://registry.npm.taobao.org/appium-youiengine-driver/download/appium-youiengine-driver-1.1.2.tgz#3afdc14a76f457b1b5852225288c6102b132afa6"
   integrity sha1-Ov3BSnb0V7G1hSIlKIxhArEyr6Y=
@@ -1034,29 +1055,29 @@ appium-youiengine-driver@^1.1.2:
     shelljs "0.8.x"
     source-map-support "^0.5.9"
 
-appium@:
-  version "1.11.1"
-  resolved "http://registry.npm.taobao.org/appium/download/appium-1.11.1.tgz#133bbff2bf42b0496e77aa7ef8f79634d4403a5a"
-  integrity sha1-Ezu/8r9CsElud6p++PeWNNRAOlo=
+appium@1.12.1:
+  version "1.12.1"
+  resolved "http://registry.npm.taobao.org/appium/download/appium-1.12.1.tgz#4262d3aef9f9fe89d5feeee4635f5ede2ba1c307"
+  integrity sha1-QmLTrvn5/onV/u7kY19e3iuhwwc=
   dependencies:
     "@babel/runtime" "^7.0.0"
-    appium-android-driver "^4.8.0"
-    appium-base-driver "^3.15.2"
-    appium-espresso-driver "^1.7.1"
-    appium-fake-driver "^0.6.2"
-    appium-ios-driver "^2.13.2"
-    appium-mac-driver "^1.4.1"
-    appium-selendroid-driver "^1.13.3"
-    appium-support "^2.25.0"
+    appium-android-driver "^4.0.0"
+    appium-base-driver "3.x"
+    appium-espresso-driver "^1.0.0"
+    appium-fake-driver "^0.x"
+    appium-ios-driver "^4.2.1"
+    appium-mac-driver "1.x"
+    appium-selendroid-driver "1.x"
+    appium-support "2.x"
     appium-tizen-driver "^1.1.1-beta.3"
-    appium-uiautomator2-driver "^1.29.1"
-    appium-windows-driver "^1.5.1"
-    appium-xcuitest-driver "^2.105.1"
-    appium-youiengine-driver "^1.1.2"
+    appium-uiautomator2-driver "1.x"
+    appium-windows-driver "1.x"
+    appium-xcuitest-driver "^2.110.1"
+    appium-youiengine-driver "^1.1.1"
     argparse "^1.0.10"
     async-lock "^1.0.0"
-    asyncbox "^2.5.2"
-    bluebird "^3.5.3"
+    asyncbox "2.x"
+    bluebird "3.x"
     continuation-local-storage "3.x"
     dateformat "^3.0.3"
     find-root "^1.1.0"
@@ -1065,9 +1086,9 @@ appium@:
     npmlog "4.x"
     request "^2.81.0"
     request-promise "4.x"
-    semver "^5.6.0"
+    semver "^5.5.0"
     source-map-support "0.x"
-    teen_process "^1.14.1"
+    teen_process "1.x"
     winston "3.x"
   optionalDependencies:
     fsevents "2.x"
@@ -1185,9 +1206,9 @@ async-listener@^0.6.0:
     shimmer "^1.1.0"
 
 async-lock@^1.0.0:
-  version "1.1.4"
-  resolved "http://registry.npm.taobao.org/async-lock/download/async-lock-1.1.4.tgz#863aff9d5c243f75034349be7df9c3ceb7a54254"
-  integrity sha1-hjr/nVwkP3UDQ0m+ffnDzrelQlQ=
+  version "1.2.0"
+  resolved "http://registry.npm.taobao.org/async-lock/download/async-lock-1.2.0.tgz#cd6a53cb1ec3f86af25eafdeb6bc7c6e317258b8"
+  integrity sha1-zWpTyx7D+GryXq/etrx8bjFyWLg=
 
 async@2.0.1:
   version "2.0.1"
@@ -1213,7 +1234,7 @@ async@~0.2.9:
   resolved "http://registry.npm.taobao.org/async/download/async-0.2.10.tgz#b6bbe0b0674b9d719708ca38de8c237cb526c3d1"
   integrity sha1-trvgsGdLnXGXCMo43owjfLUmw9E=
 
-asyncbox@2.x, asyncbox@^2.0.2, asyncbox@^2.0.4, asyncbox@^2.3.0, asyncbox@^2.3.1, asyncbox@^2.3.2, asyncbox@^2.5.2:
+asyncbox@2.x, asyncbox@^2.0.2, asyncbox@^2.0.4, asyncbox@^2.3.0, asyncbox@^2.3.1, asyncbox@^2.3.2:
   version "2.5.2"
   resolved "http://registry.npm.taobao.org/asyncbox/download/asyncbox-2.5.2.tgz#fe14c9a4ab1c13369b9c166c7ca98c29834b42ee"
   integrity sha1-/hTJpKscEzabnBZsfKmMKYNLQu4=
@@ -1271,9 +1292,9 @@ bcrypt-pbkdf@^1.0.0:
     tweetnacl "^0.14.3"
 
 big-integer@^1.6.7:
-  version "1.6.42"
-  resolved "http://registry.npm.taobao.org/big-integer/download/big-integer-1.6.42.tgz#91623ae5ceeff9a47416c56c9440a66f12f534f1"
-  integrity sha1-kWI65c7v+aR0FsVslECmbxL1NPE=
+  version "1.6.43"
+  resolved "http://registry.npm.taobao.org/big-integer/download/big-integer-1.6.43.tgz#8ac15bf13e93e509500859061233e19d8d0d99d1"
+  integrity sha1-isFb8T6T5QlQCFkGEjPhnY0NmdE=
 
 bl@^1.0.0:
   version "1.2.2"
@@ -1284,14 +1305,9 @@ bl@^1.0.0:
     safe-buffer "^5.1.1"
 
 bluebird@3.x, bluebird@^3.1.1, bluebird@^3.4.7, bluebird@^3.5.0, bluebird@^3.5.1, bluebird@^3.5.3:
-  version "3.5.3"
-  resolved "http://registry.npm.taobao.org/bluebird/download/bluebird-3.5.3.tgz#7d01c6f9616c9a51ab0f8c549a79dfe6ec33efa7"
-  integrity sha1-fQHG+WFsmlGrD4xUmnnf5uwz76c=
-
-bluebird@^2.10.2:
-  version "2.11.0"
-  resolved "http://registry.npm.taobao.org/bluebird/download/bluebird-2.11.0.tgz#534b9033c022c9579c56ba3b3e5a5caafbb650e1"
-  integrity sha1-U0uQM8AiyVecVro7Plpcqvu2UOE=
+  version "3.5.4"
+  resolved "http://registry.npm.taobao.org/bluebird/download/bluebird-3.5.4.tgz#d6cc661595de30d5b3af5fcedd3c0b3ef6ec5714"
+  integrity sha1-1sxmFZXeMNWzr1/O3TwLPvbsVxQ=
 
 bluebird@~2.9.24:
   version "2.9.34"
@@ -1393,9 +1409,9 @@ bytes@3.0.0:
   integrity sha1-0ygVQE1olpn4Wk6k+odV3ROpYEg=
 
 camelcase@^5.0.0:
-  version "5.2.0"
-  resolved "http://registry.npm.taobao.org/camelcase/download/camelcase-5.2.0.tgz#e7522abda5ed94cc0489e1b8466610e88404cf45"
-  integrity sha1-51IqvaXtlMwEieG4RmYQ6IQEz0U=
+  version "5.3.1"
+  resolved "http://registry.npm.taobao.org/camelcase/download/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
+  integrity sha1-48mzFWnhBoEd8kL3FXJaH0xJQyA=
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -1490,9 +1506,9 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
     delayed-stream "~1.0.0"
 
 commander@^2.3.0:
-  version "2.19.0"
-  resolved "http://registry.npm.taobao.org/commander/download/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
-  integrity sha1-9hmKqE5bg8RgVLlN3tv+1e6f8So=
+  version "2.20.0"
+  resolved "http://registry.npm.taobao.org/commander/download/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
+  integrity sha1-1YuytcHuj4ew00ACfp6U4iLFpCI=
 
 compress-commons@^1.2.0:
   version "1.2.2"
@@ -1557,7 +1573,7 @@ core-js@^1.0.0:
   resolved "http://registry.npm.taobao.org/core-js/download/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
   integrity sha1-ZSKUwUZR2yj6k70tX/KYOk8IxjY=
 
-core-js@^2.5.7:
+core-js@^2.5.7, core-js@^2.6.5:
   version "2.6.5"
   resolved "http://registry.npm.taobao.org/core-js/download/core-js-2.6.5.tgz#44bc8d249e7fb2ff5d00e0341a7ffb94fbf67895"
   integrity sha1-RLyNJJ5/sv9dAOA0Gn/7lPv2eJU=
@@ -2068,9 +2084,9 @@ fs.realpath@^1.0.0:
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
 
 fsevents@2.x:
-  version "2.0.1"
-  resolved "http://registry.npm.taobao.org/fsevents/download/fsevents-2.0.1.tgz#cdc8dc0145fa4198f4500ec09df35e79e5e52cf7"
-  integrity sha1-zcjcAUX6QZj0UA7AnfNeeeXlLPc=
+  version "2.0.6"
+  resolved "http://registry.npm.taobao.org/fsevents/download/fsevents-2.0.6.tgz#87b19df0bfb4a1a51d7ddb51b01b5f3bedb40c33"
+  integrity sha1-h7Gd8L+0oaUdfdtRsBtfO+20DDM=
 
 ftp-response-parser@^1.0.1:
   version "1.0.1"
@@ -2116,9 +2132,9 @@ get-caller-file@^1.0.1:
   integrity sha1-+Xj6TJDR3+f/LWvtoqUV5xO9z0o=
 
 get-caller-file@^2.0.1:
-  version "2.0.1"
-  resolved "http://registry.npm.taobao.org/get-caller-file/download/get-caller-file-2.0.1.tgz#25835260d3a2b9665fcdbb08cb039a7bbf7011c0"
-  integrity sha1-JYNSYNOiuWZfzbsIywOae79wEcA=
+  version "2.0.5"
+  resolved "http://registry.npm.taobao.org/get-caller-file/download/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
+  integrity sha1-T5RBKoLbMvNuOwuXQfipf+sDH34=
 
 get-stream@^2.1.0:
   version "2.3.1"
@@ -2240,9 +2256,9 @@ http-signature@~1.2.0:
     sshpk "^1.7.0"
 
 http-status-codes@^1.3.0:
-  version "1.3.1"
-  resolved "http://registry.npm.taobao.org/http-status-codes/download/http-status-codes-1.3.1.tgz#534ee8ac601037b71e0fe396147d773fc38ecbe0"
-  integrity sha1-U07orGAQN7ceD+OWFH13P8OOy+A=
+  version "1.3.2"
+  resolved "http://registry.npm.taobao.org/http-status-codes/download/http-status-codes-1.3.2.tgz#181dfa4455ef454e5e4d827718fca3936680d10d"
+  integrity sha1-GB36RFXvRU5eTYJ3GPyjk2aA0Q0=
 
 iconv-lite@0.4.23:
   version "0.4.23"
@@ -2252,9 +2268,9 @@ iconv-lite@0.4.23:
     safer-buffer ">= 2.1.2 < 3"
 
 ieee754@^1.1.4:
-  version "1.1.12"
-  resolved "http://registry.npm.taobao.org/ieee754/download/ieee754-1.1.12.tgz#50bf24e5b9c8bb98af4964c941cdb0918da7b60b"
-  integrity sha1-UL8k5bnIu5ivSWTJQc2wkY2ntgs=
+  version "1.1.13"
+  resolved "http://registry.npm.taobao.org/ieee754/download/ieee754-1.1.13.tgz#ec168558e95aa181fd87d37f55c32bbcb6708b84"
+  integrity sha1-7BaFWOlaoYH9h9N/VcMrvLZwi4Q=
 
 immediate@~3.0.5:
   version "3.0.6"
@@ -2301,10 +2317,10 @@ io.appium.settings@^2.10.0:
   resolved "http://registry.npm.taobao.org/io.appium.settings/download/io.appium.settings-2.14.0.tgz#648d7f324154378335a3f25365e3c846327b8493"
   integrity sha1-ZI1/MkFUN4M1o/JTZePIRjJ7hJM=
 
-ipaddr.js@1.8.0:
-  version "1.8.0"
-  resolved "http://registry.npm.taobao.org/ipaddr.js/download/ipaddr.js-1.8.0.tgz#eaa33d6ddd7ace8f7f6fe0c9ca0440e706738b1e"
-  integrity sha1-6qM9bd16zo9/b+DJygRA5wZzix4=
+ipaddr.js@1.9.0:
+  version "1.9.0"
+  resolved "http://registry.npm.taobao.org/ipaddr.js/download/ipaddr.js-1.9.0.tgz#37df74e430a0e47550fe54a2defe30d8acd95f65"
+  integrity sha1-N9905DCg5HVQ/lSi3v4w2KzZX2U=
 
 is-arrayish@^0.3.1:
   version "0.3.2"
@@ -2411,13 +2427,13 @@ jimp@^0.5.3:
     core-js "^2.5.7"
 
 jimp@^0.6.0:
-  version "0.6.0"
-  resolved "http://registry.npm.taobao.org/jimp/download/jimp-0.6.0.tgz#b0fc278a3313a4136bc9d352e0e81e56eb8c864a"
-  integrity sha1-sPwnijMTpBNrydNS4OgeVuuMhko=
+  version "0.6.1"
+  resolved "http://registry.npm.taobao.org/jimp/download/jimp-0.6.1.tgz#4d51fde35fe7e0416b9375f80a000836f1f9adf4"
+  integrity sha1-TVH941/n4EFrk3X4CgAINvH5rfQ=
   dependencies:
     "@babel/polyfill" "^7.0.0"
     "@jimp/custom" "^0.6.0"
-    "@jimp/plugins" "^0.6.0"
+    "@jimp/plugins" "^0.6.1"
     "@jimp/types" "^0.6.0"
     core-js "^2.5.7"
 
@@ -2486,9 +2502,9 @@ jsprim@^1.2.2:
     verror "1.10.0"
 
 jszip@^3.1.3:
-  version "3.2.0"
-  resolved "http://registry.npm.taobao.org/jszip/download/jszip-3.2.0.tgz#1c179e8692777490ca4e9b8f3ced08f9b820da2c"
-  integrity sha1-HBeehpJ3dJDKTpuPPO0I+bgg2iw=
+  version "3.2.1"
+  resolved "http://registry.npm.taobao.org/jszip/download/jszip-3.2.1.tgz#c5d32df7274042282b157efb16e522b43435e01a"
+  integrity sha1-xdMt9ydAQigrFX77FuUitDQ14Bo=
   dependencies:
     lie "~3.3.0"
     pako "~1.0.2"
@@ -2620,12 +2636,12 @@ media-typer@0.3.0:
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
 
 mem@^4.0.0:
-  version "4.1.0"
-  resolved "http://registry.npm.taobao.org/mem/download/mem-4.1.0.tgz#aeb9be2d21f47e78af29e4ac5978e8afa2ca5b8a"
-  integrity sha1-rrm+LSH0fnivKeSsWXjor6LKW4o=
+  version "4.3.0"
+  resolved "http://registry.npm.taobao.org/mem/download/mem-4.3.0.tgz#461af497bc4ae09608cdb2e60eefb69bff744178"
+  integrity sha1-Rhr0l7xK4JYIzbLmDu+2m/90QXg=
   dependencies:
     map-age-cleaner "^0.1.1"
-    mimic-fn "^1.0.0"
+    mimic-fn "^2.0.0"
     p-is-promise "^2.0.0"
 
 merge-descriptors@1.0.1:
@@ -2648,17 +2664,17 @@ methods@~1.1.2:
   resolved "http://registry.npm.taobao.org/methods/download/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
 
-mime-db@~1.38.0:
-  version "1.38.0"
-  resolved "http://registry.npm.taobao.org/mime-db/download/mime-db-1.38.0.tgz#1a2aab16da9eb167b49c6e4df2d9c68d63d8e2ad"
-  integrity sha1-GiqrFtqesWe0nG5N8tnGjWPY4q0=
+mime-db@1.40.0:
+  version "1.40.0"
+  resolved "http://registry.npm.taobao.org/mime-db/download/mime-db-1.40.0.tgz#a65057e998db090f732a68f6c276d387d4126c32"
+  integrity sha1-plBX6ZjbCQ9zKmj2wnbTh9QSbDI=
 
 mime-types@^2.1.12, mime-types@~2.1.18, mime-types@~2.1.19:
-  version "2.1.22"
-  resolved "http://registry.npm.taobao.org/mime-types/download/mime-types-2.1.22.tgz#fe6b355a190926ab7698c9a0556a11199b2199bd"
-  integrity sha1-/ms1WhkJJqt2mMmgVWoRGZshmb0=
+  version "2.1.24"
+  resolved "http://registry.npm.taobao.org/mime-types/download/mime-types-2.1.24.tgz#b6f8d0b3e951efb77dedeca194cff6d16f676f81"
+  integrity sha1-tvjQs+lR77d97eyhlM/20W9nb4E=
   dependencies:
-    mime-db "~1.38.0"
+    mime-db "1.40.0"
 
 mime@1.4.1:
   version "1.4.1"
@@ -2670,10 +2686,10 @@ mime@^1.3.4:
   resolved "http://registry.npm.taobao.org/mime/download/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
   integrity sha1-Ms2eXGRVO9WNGaVor0Uqz/BJgbE=
 
-mimic-fn@^1.0.0:
-  version "1.2.0"
-  resolved "http://registry.npm.taobao.org/mimic-fn/download/mimic-fn-1.2.0.tgz#820c86a39334640e99516928bd03fca88057d022"
-  integrity sha1-ggyGo5M0ZA6ZUWkovQP8qIBX0CI=
+mimic-fn@^2.0.0:
+  version "2.1.0"
+  resolved "http://registry.npm.taobao.org/mimic-fn/download/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
+  integrity sha1-ftLCzMyvhNP/y3pptXcR/CCDQBs=
 
 min-document@^2.19.0:
   version "2.19.0"
@@ -2747,9 +2763,9 @@ mv@^2.1.1:
     rimraf "~2.4.0"
 
 nan@^2.11.1:
-  version "2.12.1"
-  resolved "http://registry.npm.taobao.org/nan/download/nan-2.12.1.tgz#7b1aa193e9aa86057e3c7bbd0ac448e770925552"
-  integrity sha1-exqhk+mqhgV+PHu9CsRI53CSVVI=
+  version "2.13.2"
+  resolved "http://registry.npm.taobao.org/nan/download/nan-2.13.2.tgz#f51dc7ae66ba7d5d55e1e6d4d8092e802c9aefe7"
+  integrity sha1-9R3Hrma6fV1V4ebU2AkugCya7+c=
 
 ncp@^2.0.0, ncp@~2.0.0:
   version "2.0.0"
@@ -2821,6 +2837,19 @@ node-simctl@^4.0.0:
     source-map-support "^0.5.5"
     teen_process "^1.5.1"
 
+node-simctl@^5.0.0:
+  version "5.0.0"
+  resolved "http://registry.npm.taobao.org/node-simctl/download/node-simctl-5.0.0.tgz#8c6cb18871f55278c1e167a02f059a602c556653"
+  integrity sha1-jGyxiHH1UnjB4WegLwWaYCxVZlM=
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    appium-support "^2.26.0"
+    appium-xcode "^3.1.0"
+    asyncbox "^2.3.1"
+    lodash "^4.2.1"
+    source-map-support "^0.5.5"
+    teen_process "^1.5.1"
+
 normalize-path@^2.0.0:
   version "2.1.1"
   resolved "http://registry.npm.taobao.org/normalize-path/download/normalize-path-2.1.1.tgz#1ab28b556e198363a8c1a6f7e6fa20137fe6aed9"
@@ -2861,9 +2890,9 @@ object-assign@^4.0.1, object-assign@^4.1.0:
   integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
 
 object-keys@^1.0.12:
-  version "1.1.0"
-  resolved "http://registry.npm.taobao.org/object-keys/download/object-keys-1.1.0.tgz#11bd22348dd2e096a045ab06f6c85bcc340fa032"
-  integrity sha1-Eb0iNI3S4JagRasG9shbzDQPoDI=
+  version "1.1.1"
+  resolved "http://registry.npm.taobao.org/object-keys/download/object-keys-1.1.1.tgz#1c47f272df277f3b1daf061677d9c82e2322c60e"
+  integrity sha1-HEfyct8nfzsdrwYWd9nILiMixg4=
 
 omggif@^1.0.9:
   version "1.0.9"
@@ -2908,7 +2937,7 @@ os-locale@^3.0.0, os-locale@^3.1.0:
     lcid "^2.0.0"
     mem "^4.0.0"
 
-os-tmpdir@^1.0.0, os-tmpdir@^1.0.1, os-tmpdir@~1.0.1:
+os-tmpdir@^1.0.1, os-tmpdir@~1.0.1:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/os-tmpdir/download/os-tmpdir-1.0.2.tgz#bbe67406c79aa85c5cfec766fe5734555dfa1274"
   integrity sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ=
@@ -2924,9 +2953,9 @@ p-finally@^1.0.0:
   integrity sha1-P7z7FbiZpEEjs0ttzBi3JDNqLK4=
 
 p-is-promise@^2.0.0:
-  version "2.0.0"
-  resolved "http://registry.npm.taobao.org/p-is-promise/download/p-is-promise-2.0.0.tgz#7554e3d572109a87e1f3f53f6a7d85d1b194f4c5"
-  integrity sha1-dVTj1XIQmofh8/U/an2F0bGU9MU=
+  version "2.1.0"
+  resolved "http://registry.npm.taobao.org/p-is-promise/download/p-is-promise-2.1.0.tgz#918cebaea248a62cf7ffab8e3bca8c5f882fc42e"
+  integrity sha1-kYzrrqJIpiz3/6uOO8qMX4gvxC4=
 
 p-limit@^2.0.0:
   version "2.2.0"
@@ -2943,9 +2972,9 @@ p-locate@^3.0.0:
     p-limit "^2.0.0"
 
 p-try@^2.0.0:
-  version "2.0.0"
-  resolved "http://registry.npm.taobao.org/p-try/download/p-try-2.0.0.tgz#85080bb87c64688fa47996fe8f7dfbe8211760b1"
-  integrity sha1-hQgLuHxkaI+keZb+j3376CEXYLE=
+  version "2.2.0"
+  resolved "http://registry.npm.taobao.org/p-try/download/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
+  integrity sha1-yyhoVA4xPWHeWPr741zpAE1VQOY=
 
 pako@^1.0.5, pako@~1.0.2:
   version "1.0.10"
@@ -2989,9 +3018,9 @@ parse-node-version@^1.0.0:
   integrity sha1-4rXb7eAOf6m8NjYH9TMn6LBzGJs=
 
 parseurl@~1.3.2:
-  version "1.3.2"
-  resolved "http://registry.npm.taobao.org/parseurl/download/parseurl-1.3.2.tgz#fc289d4ed8993119460c156253262cdc8de65bf3"
-  integrity sha1-/CidTtiZMRlGDBViUyYs3I3mW/M=
+  version "1.3.3"
+  resolved "http://registry.npm.taobao.org/parseurl/download/parseurl-1.3.3.tgz#9da19e7bee8d12dff0513ed5b76957793bc2e8d4"
+  integrity sha1-naGee+6NEt/wUT7Vt2lXeTvC6NQ=
 
 path-exists@^3.0.0:
   version "3.0.0"
@@ -3089,9 +3118,9 @@ plist@^3.0.1:
     xmldom "0.1.x"
 
 pngjs@^3.0.0, pngjs@^3.3.3:
-  version "3.3.3"
-  resolved "http://registry.npm.taobao.org/pngjs/download/pngjs-3.3.3.tgz#85173703bde3edac8998757b96e5821d0966a21b"
-  integrity sha1-hRc3A73j7ayJmHV7luWCHQlmohs=
+  version "3.4.0"
+  resolved "http://registry.npm.taobao.org/pngjs/download/pngjs-3.4.0.tgz#99ca7d725965fb655814eaf65f38f12bbdbf555f"
+  integrity sha1-mcp9clll+2VYFOr2XzjxK72/VV8=
 
 portfinder@^1.0.13, portfinder@^1.0.6:
   version "1.0.20"
@@ -3128,12 +3157,12 @@ process@~0.5.1:
   integrity sha1-FjjYqONML0QKkduVq5rrZ3/Bhc8=
 
 proxy-addr@~2.0.4:
-  version "2.0.4"
-  resolved "http://registry.npm.taobao.org/proxy-addr/download/proxy-addr-2.0.4.tgz#ecfc733bf22ff8c6f407fa275327b9ab67e48b93"
-  integrity sha1-7PxzO/Iv+Mb0B/onUye5q2fki5M=
+  version "2.0.5"
+  resolved "http://registry.npm.taobao.org/proxy-addr/download/proxy-addr-2.0.5.tgz#34cbd64a2d81f4b1fd21e76f9f06c8a45299ee34"
+  integrity sha1-NMvWSi2B9LH9IedvnwbIpFKZ7jQ=
   dependencies:
     forwarded "~0.1.2"
-    ipaddr.js "1.8.0"
+    ipaddr.js "1.9.0"
 
 ps-list@^4.0.0:
   version "4.1.0"
@@ -3220,9 +3249,9 @@ readable-stream@^2.0.0, readable-stream@^2.0.5, readable-stream@^2.0.6, readable
     util-deprecate "~1.0.1"
 
 readable-stream@^3.1.1:
-  version "3.2.0"
-  resolved "http://registry.npm.taobao.org/readable-stream/download/readable-stream-3.2.0.tgz#de17f229864c120a9f56945756e4f32c4045245d"
-  integrity sha1-3hfyKYZMEgqfVpRXVuTzLEBFJF0=
+  version "3.3.0"
+  resolved "http://registry.npm.taobao.org/readable-stream/download/readable-stream-3.3.0.tgz#cb8011aad002eb717bf040291feba8569c986fb9"
+  integrity sha1-y4ARqtAC63F78EApH+uoVpyYb7k=
   dependencies:
     inherits "^2.0.3"
     string_decoder "^1.1.1"
@@ -3235,10 +3264,10 @@ rechoir@^0.6.2:
   dependencies:
     resolve "^1.1.6"
 
-regenerator-runtime@^0.12.0:
-  version "0.12.1"
-  resolved "http://registry.npm.taobao.org/regenerator-runtime/download/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
-  integrity sha1-+hpxVEdkwDb4xJsToIsllMn4oN4=
+regenerator-runtime@^0.13.2:
+  version "0.13.2"
+  resolved "http://registry.npm.taobao.org/regenerator-runtime/download/regenerator-runtime-0.13.2.tgz#32e59c9a6fb9b1a4aff09b4930ca2d4477343447"
+  integrity sha1-MuWcmm+5saSv8JtJMMotRHc0NEc=
 
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
@@ -3310,17 +3339,12 @@ resolve@^1.1.6:
   dependencies:
     path-parse "^1.0.6"
 
-rimraf@^2.5.1, rimraf@^2.5.4:
+rimraf@^2.5.1, rimraf@^2.5.4, rimraf@~2.6.2:
   version "2.6.3"
   resolved "http://registry.npm.taobao.org/rimraf/download/rimraf-2.6.3.tgz#b2d104fe0d8fb27cf9e0a1cda8262dd3833c6cab"
   integrity sha1-stEE/g2Psnz54KHNqCYt04M8bKs=
   dependencies:
     glob "^7.1.3"
-
-rimraf@~2.2.6:
-  version "2.2.8"
-  resolved "http://registry.npm.taobao.org/rimraf/download/rimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
-  integrity sha1-5Dm+Kq7jJzIZUnMPmaiSnk/FBYI=
 
 rimraf@~2.4.0:
   version "2.4.5"
@@ -3377,9 +3401,14 @@ selenium-webdriver@3.x:
     xml2js "^0.4.17"
 
 semver@^5.3.0, semver@^5.5.0, semver@^5.6.0:
-  version "5.6.0"
-  resolved "http://registry.npm.taobao.org/semver/download/semver-5.6.0.tgz#7e74256fbaa49c75aa7c7a205cc22799cac80004"
-  integrity sha1-fnQlb7qknHWqfHogXMInmcrIAAQ=
+  version "5.7.0"
+  resolved "http://registry.npm.taobao.org/semver/download/semver-5.7.0.tgz#790a7cf6fea5459bac96110b29b60412dc8ff96b"
+  integrity sha1-eQp89v6lRZuslhELKbYEEtyP+Ws=
+
+semver@^6.0.0:
+  version "6.0.0"
+  resolved "http://registry.npm.taobao.org/semver/download/semver-6.0.0.tgz#05e359ee571e5ad7ed641a6eec1e547ba52dea65"
+  integrity sha1-BeNZ7lceWtftZBpu7B5Ue6Ut6mU=
 
 semver@~5.3.0:
   version "5.3.0"
@@ -3498,9 +3527,9 @@ simple-swizzle@^0.2.2:
     is-arrayish "^0.3.1"
 
 "source-map-support@0.3.2 - 1.0.0", source-map-support@0.x, source-map-support@^0.5.3, source-map-support@^0.5.5, source-map-support@^0.5.8, source-map-support@^0.5.9:
-  version "0.5.10"
-  resolved "http://registry.npm.taobao.org/source-map-support/download/source-map-support-0.5.10.tgz#2214080bc9d51832511ee2bab96e3c2f9353120c"
-  integrity sha1-IhQIC8nVGDJRHuK6uW48L5NTEgw=
+  version "0.5.12"
+  resolved "http://registry.npm.taobao.org/source-map-support/download/source-map-support-0.5.12.tgz#b4f3b10d51857a5af0138d3ce8003b201613d599"
+  integrity sha1-tPOxDVGFelrwE4086AA7IBYT1Zk=
   dependencies:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
@@ -3607,13 +3636,13 @@ string-width@^1.0.1:
     strip-ansi "^4.0.0"
 
 string-width@^3.0.0:
-  version "3.0.0"
-  resolved "http://registry.npm.taobao.org/string-width/download/string-width-3.0.0.tgz#5a1690a57cc78211fffd9bf24bbe24d090604eb1"
-  integrity sha1-WhaQpXzHghH//ZvyS74k0JBgTrE=
+  version "3.1.0"
+  resolved "http://registry.npm.taobao.org/string-width/download/string-width-3.1.0.tgz#22767be21b62af1081574306f69ac51b62203961"
+  integrity sha1-InZ74htirxCBV0MG9prFG2IgOWE=
   dependencies:
     emoji-regex "^7.0.1"
     is-fullwidth-code-point "^2.0.0"
-    strip-ansi "^5.0.0"
+    strip-ansi "^5.1.0"
 
 string.prototype.trim@^1.1.2:
   version "1.1.2"
@@ -3657,12 +3686,12 @@ strip-ansi@^4.0.0:
   dependencies:
     ansi-regex "^3.0.0"
 
-strip-ansi@^5.0.0:
-  version "5.0.0"
-  resolved "http://registry.npm.taobao.org/strip-ansi/download/strip-ansi-5.0.0.tgz#f78f68b5d0866c20b2c9b8c61b5298508dc8756f"
-  integrity sha1-949otdCGbCCyybjGG1KYUI3IdW8=
+strip-ansi@^5.1.0:
+  version "5.2.0"
+  resolved "http://registry.npm.taobao.org/strip-ansi/download/strip-ansi-5.2.0.tgz#8c9a536feb6afc962bdfa5b104a5091c1ad9c0ae"
+  integrity sha1-jJpTb+tq/JYr36WxBKUJHBrZwK4=
   dependencies:
-    ansi-regex "^4.0.0"
+    ansi-regex "^4.1.0"
 
 strip-eof@^1.0.0:
   version "1.0.0"
@@ -3699,7 +3728,7 @@ tasklist@^3.1.0:
     pify "^2.2.0"
     sec "^1.0.0"
 
-teen_process@^1.11.0, teen_process@^1.14.0, teen_process@^1.14.1, teen_process@^1.3.0, teen_process@^1.3.1, teen_process@^1.5.1, teen_process@^1.6.0, teen_process@^1.7.0, teen_process@^1.7.1, teen_process@^1.9.0:
+teen_process@1.x, teen_process@^1.11.0, teen_process@^1.14.0, teen_process@^1.3.0, teen_process@^1.3.1, teen_process@^1.5.1, teen_process@^1.6.0, teen_process@^1.7.0, teen_process@^1.7.1, teen_process@^1.9.0:
   version "1.14.1"
   resolved "http://registry.npm.taobao.org/teen_process/download/teen_process-1.14.1.tgz#4a7b60ef75a0d74f77361294024f96ba10c3360e"
   integrity sha1-Sntg73Wg1093NhKUAk+WuhDDNg4=
@@ -3712,13 +3741,12 @@ teen_process@^1.11.0, teen_process@^1.14.0, teen_process@^1.14.1, teen_process@^
     source-map-support "^0.5.3"
     through "^2.3.8"
 
-temp@^0.8.3:
-  version "0.8.3"
-  resolved "http://registry.npm.taobao.org/temp/download/temp-0.8.3.tgz#e0c6bc4d26b903124410e4fed81103014dfc1f59"
-  integrity sha1-4Ma8TSa5AxJEEOT+2BEDAU38H1k=
+temp@^0.9.0:
+  version "0.9.0"
+  resolved "http://registry.npm.taobao.org/temp/download/temp-0.9.0.tgz#61391795a11bd9738d4c4d7f55f012cb8f55edaa"
+  integrity sha1-YTkXlaEb2XONTE1/VfASy49V7ao=
   dependencies:
-    os-tmpdir "^1.0.0"
-    rimraf "~2.2.6"
+    rimraf "~2.6.2"
 
 text-hex@1.0.x:
   version "1.0.0"
@@ -3908,10 +3936,10 @@ walkdir@^0.0.11:
   resolved "http://registry.npm.taobao.org/walkdir/download/walkdir-0.0.11.tgz#a16d025eb931bd03b52f308caed0f40fcebe9532"
   integrity sha1-oW0CXrkxvQO1LzCMrtD0D86+lTI=
 
-wd@:
-  version "1.11.1"
-  resolved "http://registry.npm.taobao.org/wd/download/wd-1.11.1.tgz#21a33e21977ad20522bb189f6529c3b55ac3862c"
-  integrity sha1-IaM+IZd60gUiuxifZSnDtVrDhiw=
+wd@1.11.2:
+  version "1.11.2"
+  resolved "http://registry.npm.taobao.org/wd/download/wd-1.11.2.tgz#bca2a47ce9a866710e2db8c802385d06bc964444"
+  integrity sha1-vKKkfOmoZnEOLbjIAjhdBryWREQ=
   dependencies:
     archiver "2.1.1"
     async "2.0.1"
@@ -3977,9 +4005,9 @@ wrappy@1:
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 
 ws@^6.0.0:
-  version "6.2.0"
-  resolved "http://registry.npm.taobao.org/ws/download/ws-6.2.0.tgz#13806d9913b2a5f3cbb9ba47b563c002cbc7c526"
-  integrity sha1-E4BtmROypfPLubpHtWPAAsvHxSY=
+  version "6.2.1"
+  resolved "http://registry.npm.taobao.org/ws/download/ws-6.2.1.tgz#442fdf0a47ed64f59b6a5d8ff130f4748ed524fb"
+  integrity sha1-RC/fCkftZPWbal2P8TD0dI7VJPs=
   dependencies:
     async-limiter "~1.0.0"
 

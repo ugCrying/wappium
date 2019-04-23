@@ -9,9 +9,9 @@
   "license": "MIT",
   "dependencies": {
     "adbkit": "",
-    "appium": "",
+    "appium": "1.12.1",
     "fs-extra": "",
-    "wd": "",
+    "wd": "1.11.2",
     "yargs": ""
   },
   "scripts": {
