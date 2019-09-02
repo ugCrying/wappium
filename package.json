@@ -1,18 +1,18 @@
 {
   "name": "wappium",
   "description": "Automation for Apps.",
-  "version": "1.8.0",
+  "version": "1.14.0",
   "main": "./index.js",
   "bin": {
     "wappium": "./index.js"
   },
   "license": "MIT",
   "dependencies": {
-    "adbkit": "",
-    "appium": "1.12.1",
-    "fs-extra": "",
-    "wd": "1.11.2",
-    "yargs": ""
+    "adbkit": "2.11.1",
+    "appium": "1.14.2",
+    "fs-extra": "8.1.0",
+    "wd": "1.11.4",
+    "yargs": "14.0.0"
   },
   "scripts": {
     "start": "node .",
