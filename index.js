@@ -1,7 +1,7 @@
 console.log("##########################################");
 console.log(
   `Testwa-Appium based on appium@${
-    require("appium/package.json").version
+  require("appium/package.json").version
   }！\nStarting...`
 );
 console.log("JAVA_HOME:", process.env.JAVA_HOME);
@@ -10,7 +10,7 @@ console.log("##########################################");
 process.env.http_proxy = "";
 process.env.https_proxy = "";
 const argv = require("yargs").argv;
-const apkUtilsMethods = require("appium-adb/build/lib/tools/apk-utils");
+const apkUtilsMethods = require("appium/node_modules/appium-adb/build/lib/tools/apk-utils");
 const { install, startApp, installFromDevicePath } = apkUtilsMethods;
 
 const xpathLocators = {
@@ -34,7 +34,7 @@ const xpathLocators = {
   }
 };
 
-const getInstallXpathLocator = function(manufacturer, language) {
+const getInstallXpathLocator = function (manufacturer, language) {
   let lan;
   let retry;
   if (manufacturer && xpathLocators.hasOwnProperty(manufacturer)) {
@@ -51,14 +51,14 @@ const getInstallXpathLocator = function(manufacturer, language) {
   return [lan, retry];
 };
 
-const forceInstall = async function(androidDriver) {
+const forceInstall = async function (androidDriver) {
   console.log("##########################################");
   console.log("testwa:forceInstall");
   console.log("##########################################");
   let manufacturer = androidDriver.caps.deviceManufacturer.toLowerCase();
   let language = androidDriver.caps.language.toLowerCase();
   let [locator, retries] = getInstallXpathLocator(manufacturer, language);
-  let func = async function() {
+  let func = async function () {
     try {
       await sleep(2000);
       let element = await androidDriver.findElOrEls("xpath", locator, false);
@@ -70,7 +70,7 @@ const forceInstall = async function(androidDriver) {
   retry(retries, func);
 };
 
-apkUtilsMethods.install = async function() {
+apkUtilsMethods.install = async function () {
   console.log("##########################################");
   console.log("3.testwa:install");
   console.log("##########################################");
@@ -84,7 +84,7 @@ apkUtilsMethods.install = async function() {
     return installed;
   }
 };
-apkUtilsMethods.startApp = async function() {
+apkUtilsMethods.startApp = async function () {
   const stdout = await startApp.apply(this, arguments);
   this.appLaunchTotalTime = stdout.match(/TotalTime: (.*)/)[1]
     ? +stdout.match(/TotalTime: (.*)/)[1]
@@ -94,7 +94,7 @@ apkUtilsMethods.startApp = async function() {
   console.log("##########################################");
   return stdout;
 };
-apkUtilsMethods.installFromDevicePath = async function() {
+apkUtilsMethods.installFromDevicePath = async function () {
   console.log("##########################################");
   console.log("testwa:installFromDevicePath");
   console.log("##########################################");
@@ -102,19 +102,19 @@ apkUtilsMethods.installFromDevicePath = async function() {
   // forceInstall(androidDriver);
   return installed;
 };
-require("appium-android-driver/build/lib/android-helpers.js").default.pushSettingsApp = async function() {};
+require("appium/node_modules/appium-android-driver/build/lib/android-helpers.js").default.pushSettingsApp = async function () { };
 const {
   UiAutomator2Server
-} = require("appium-uiautomator2-driver/build/lib/uiautomator2.js");
+} = require("appium/node_modules/appium-uiautomator2-driver/build/lib/uiautomator2.js");
 // .default;
 const {
   XCUITestDriver
-} = require("appium-xcuitest-driver/build/lib/driver.js");
+} = require("appium/node_modules/appium-xcuitest-driver/build/lib/driver.js");
 const { main } = require("appium");
 const installServerApk = UiAutomator2Server.prototype.installServerApk;
 const startWdaSession = XCUITestDriver.prototype.startWdaSession;
 const installApp = XCUITestDriver.prototype.installApp;
-XCUITestDriver.prototype.startWdaSession = async function() {
+XCUITestDriver.prototype.startWdaSession = async function () {
   const startTime = new Date().getTime();
   await startWdaSession.apply(this, arguments);
   this.startAppTime = new Date().getTime() - startTime;
@@ -122,7 +122,7 @@ XCUITestDriver.prototype.startWdaSession = async function() {
   console.log("testwa:startWdaSession", this.startAppTime);
   console.log("##########################################");
 };
-XCUITestDriver.prototype.installApp = async function() {
+XCUITestDriver.prototype.installApp = async function () {
   const install = this.opts.device.install;
   this.opts.device.install = async (...args) => {
     const startTime = new Date().getTime();
@@ -134,7 +134,7 @@ XCUITestDriver.prototype.installApp = async function() {
   };
   return installApp.apply(this, arguments);
 };
-UiAutomator2Server.prototype.installServerApk = async function() {
+UiAutomator2Server.prototype.installServerApk = async function () {
   console.log("##########################################");
   console.log("2.testwa:installServerApk");
   console.log("##########################################");
