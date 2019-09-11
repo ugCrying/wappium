@@ -4,4 +4,6 @@ appium 的 testwa 扩展
 
 ## 运行
 
-`yarn&&yarn start`
+`npm i&&yarn start`
+
+[升级](changelog)
