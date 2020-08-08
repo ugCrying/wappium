@@ -64,3 +64,5 @@ tests/code.js
 tests/screen
 tests/source
 .DS_Store
+
+.vscode/
